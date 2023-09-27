@@ -1,29 +1,51 @@
 /**Base Styles**/
 *{
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1{
    text-align: center;
    color: blanchedalmond;
    background-color: tomato;   
 }
-#div{
-    height: 250px;
-    width: 500px;
-    border: 0cap;
+#div1{
+    position:relative;
+    margin: 7px;
+    width: 30%;
+    float: left;
+    border: 3px rgba(185, 122, 49, 0.632) dotted;
     background-color: antiquewhite;  
-    margin-left: auto;
-    margin-right: auto;
-    font-family: cursive;
+    margin-left: 7px;
+    margin-right: 7px;
     color: tomato;
+    text-align: right;
+    padding: 5px;
+    }
+
+#div{
+    position:relative;
+    margin: 7px;
+    width: 30%;
+    float: left;
+    border: 3px rgba(185, 122, 49, 0.632) dotted;
+    background-color: antiquewhite;  
+    margin-left: 7px;
+    margin-right: 7px;
+    color: tomato;
+    text-align: right;
+    padding: 5px;
+}
+p{
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 7px;
 }
 
-/**Large devices**/
+
+/**Desktop**/
 
 @media(min-width:992px){
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
-    float: left;
-    border: 1px black;
 }
 .col-lg-1 {
     width: 8.33%;
@@ -61,14 +83,15 @@ h1{
 .col-lg-12 {
     width: 100%;
 }
+#div{
+    width: 33%;
+}
 }
 
-/**Medium devices**/
+/**Tablet**/
 
 @media(min-width:768px) and (max-width:991px){
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
-        float: :left;
-        boarder: 1px black;
     }
 .col-md-1{
     width: 8.33%;
@@ -106,14 +129,15 @@ h1{
 .col-md-12{
     width: 100%;
 }
+#div{
+    width: 50%;
+}
 }
 
-/**Small devices**/
+/**Mobile**/
 
 @media(max-width:767px){
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
-        float: left;
-        border: 1px black;
     }
 .col-sm-1{
     width: 8.33%;
@@ -149,6 +173,9 @@ h1{
     width: 91.66%;
 }
 .col-sm-12{
+    width: 100%;
+}
+#div{
     width: 100%;
 }
 }
